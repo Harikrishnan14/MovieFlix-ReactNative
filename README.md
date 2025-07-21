@@ -13,7 +13,7 @@
 2. **Install Expo CLI (optional but recommended) :** While `npx expo start` works without it, installing Expo globally is useful for frequent development:
    ### `npm install -g expo-cli`
 
-4. **Clone or Download the Code :**
+3. **Clone or Download the Code :**
 
    Clone the repository using the following command:
    ### `git clone https://github.com/Harikrishnan14/MovieFlix-ReactNative.git`
@@ -23,7 +23,23 @@
 
    Or alternatively, download the ZIP file from GitHub and extract it.
 
-5. **Install Dependencies :**
+4. **Create .env file :** Navigate to root of the project folder, and create a file named `.env`
+
+5. **Get TMDB API key :** 
+   1. Goto https://developer.themoviedb.org/docs/getting-started and create an account and get the API key.
+   2. Put the API key inside the `.env` file as the value of `EXPO_PUBLIC_MOVIE_API_KEY`
+
+6. **Setup Appwrite :**
+   1. Goto https://cloud.appwrite.io/console/ create an accout or login if you already have one.
+   2. Create a project and get the project id. Put the project id inside the `.env` file as the value of `EXPO_PUBLIC_APPWRITE_PROJECT_ID`
+   3. Create a database inside that project and get the database id. Put the database id inside the `.env` file as the value of `EXPO_PUBLIC_APPWRITE_DATABASE_ID`
+   4. Create a collection inside that database with the following attributes: ![Image](https://github.com/user-attachments/assets/5c70863b-0c17-49bf-aab0-d8a48c8584c5)
+   5. Get the collection id. Put the collection id inside the `.env` file as the value of `EXPO_PUBLIC_APPWRITE_COLLECTION_ID`
+   6. And your `.env` file should look like this:
+
+      ![Image](https://github.com/user-attachments/assets/e975863d-d774-42bc-97c3-3b90491b1c53)
+
+8. **Install Dependencies :**
    1. Open the terminal ( or command prompt on Windows ) ( or if you are using VS Code, you can use its terminal ) from the root folder and run the following command to install all the dependencies needed to run the application [ Don't close this terminal we will be using this later] :
       ### `npm i`
       
